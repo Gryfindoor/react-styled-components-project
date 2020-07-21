@@ -9,7 +9,7 @@ const Header = () => {
       <Banner
         greeting="welcome to"
         title="beachwalk resort"
-        text="Jeśli jesteś autorem wiersza zapoznaj się z zasadami publikacji i skorzystaj z formularza by przesłać swoje prace. Kolekcja wierszy jest systematycznie powiększana tak więc mamy nadzieję że często będziesz do nich wracać."
+        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quisquam corrupti dicta tempora sequi sapiente!"
       >
        <PrimaryBtn t="1rem">
          Viev details

@@ -21,12 +21,7 @@ const About = () => {
         <div className="about-info">
           <Title title="about us" center />
           <p>
-            Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
-            przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez
-            nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć
-            wieków później zaczął być używany przemyśle elektronicznym,
-            pozostając praktycznie niezmienionym. Spopularyzował się w latach
-            60. X
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quisquam corrupti dicta tempora sequi sapiente!
           </p>
           <PrimaryBtn>read more!</PrimaryBtn>
         </div>
@@ -53,7 +48,7 @@ const AboutCenter = styled.div`
   }
   width: 90vw;
   margin: 0 auto;
-  ${media.desktop`
+  ${media.large`
   .about-img,
   .about-info {
     padding: ${setRem(0)};

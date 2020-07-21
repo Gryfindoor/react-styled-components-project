@@ -9,40 +9,35 @@ import rooms from './rooms-data';
 
 export default class Rooms extends Component {
     state = {
-        rooms: rooms
-    }
-
+      rooms: rooms
+    };
     render() {
-        return (
-            <Section color ={setColor.lighthGrey}>
-                <Title title="our rooms" center/>
-                <RoomsCenter>
-                {this.state.rooms.map((room) => {
-                    return <Room key={room.id} room={room}/>
-                })}
-
-                </RoomsCenter>
-            </Section>
-        )
+      return (
+        <Section color={setColor.lightGrey}>
+          <Title title="our rooms" center />
+          <RoomsCenter>
+            {this.state.rooms.map(room => {
+              return <Room key={room.id} room={room} />;
+            })}
+          </RoomsCenter>
+        </Section>
+      );
     }
-}
-
-const RoomsCenter = styled.div`
+  }
+  
+  const RoomsCenter = styled.div`
     width: 90vw;
     margin: 0 auto;
     ${media.tablet`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: ${setRem(32)};
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-column-gap:${setRem(32)};
     `};
     ${media.desktop`
-        width: 100vw;
-        max-width: 1170px;
+    width:100vw;
+    max-width:1170px;
     `};
     ${media.large`
-        grid-template-columns: repeat(3,1fr);
-
+      grid-template-columns:repeat(3,1fr);
     `};
-
-
-`;
+  `;
